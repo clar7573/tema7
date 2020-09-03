@@ -30,27 +30,23 @@
 
         }
 
-        article:nth-child(even) {
 
-            /*background: rgba(119, 114, 114, 0.27);*/
-        }
+        article {
 
-        article:nth-child(odd) {
-
-            background: #9b9a9a;
+            background: #ffffff;
         }
 
         @media screen and (min-width:600px) {
 
             .grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(1fr);
 
             }
 
             .personliste {
                 display: grid;
                 grid-gap: 5px;
-                grid-template-columns: repeat(2, 1fr)
+                grid-template-columns: repeat(1fr)
             }
 
         }
@@ -114,7 +110,7 @@
 
         }
 
-        .indhold {
+        #popup article {
             width: 70vw;
             min-height: 50vh;
             background: #fff;
@@ -138,7 +134,7 @@
         }
 
         .background {
-            background-color: rgba(255, 0, 0, 0.29);
+            background-color: darkred;
         }
 
         footer {
@@ -150,14 +146,13 @@
             width: 20vw;
             height: 20vh;
         }
-
     </style>
 </head>
 
 <header>
     <section class="background">
         <div id="babush">
-            <img src="imgs/large/rocky.png" alt="img">
+
         </div>
         <div id="overskrift">Bistro Babushka</div>
     </section>
@@ -187,15 +182,17 @@
     </template>
 
     <div id="popup">
-        <button class="luk">X</button>
-        <section class="indhold">
-            <article class="enkeltPerson">
-                <h2></h2>
-                <img class="billedeo" src="" alt="">
-                <p class="githubo"></p>
-            </article>
 
-        </section>
+
+        <button class="luk">X</button>
+        <article class="enkeltPerson">
+
+            <h2></h2>
+            <img class="billedeo" src="" alt="">
+            <p class="githubo"></p>
+        </article>
+
+
 
     </div>
 
@@ -283,8 +280,5 @@
             this.classList.add("valgt");
             visJson();
         }
-
     </script>
-</body>
-
-</html>
+</body></html>
